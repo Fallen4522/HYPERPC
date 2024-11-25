@@ -1,0 +1,275 @@
+/* Основной стиль */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #333;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Шапка */
+.header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header .navigation .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #4ade80;
+}
+
+/* Герой */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #4ade80, #22d3ee);
+    color: #fff;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-bg img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 21.7%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+    background-color: #1e40af;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: #4ade80;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #22d3ee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Категории */
+.categories {
+    margin-top: 40px;
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.category-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.category-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.category-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0 10px;
+}
+
+.category-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Футер */
+.footer {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+/* Кнопки */
+.btn-danger {
+    background-color: #e3342f;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #cc1f1a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Корзина */
+.cart-section {
+    padding: 40px 0;
+    background: #f8f9fa;
+}
+
+#cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#cart-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-list li:last-child {
+    border-bottom: none;
+}
+
+/* Стиль для раздела О нас */
+.about {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.testimonials p {
+    margin-bottom: 10px;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
