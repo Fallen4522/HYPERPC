@@ -273,3 +273,13 @@ a {
 .about ul li {
     margin-bottom: 10px;
 }
+
+#contact {
+  background-color: #2c3e50; /* Цвет фона */
+  color: white;              /* Цвет текста */
+  text-align: center;        /* Выравнивание текста */
+  padding: 1rem;             /* Внутренние отступы */
+  margin-top: 2rem;          /* Отступ сверху */
+  border-top: 3px solid #1abc9c; /* Верхняя граница для акцента */
+}
+
